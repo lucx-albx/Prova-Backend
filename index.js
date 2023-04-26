@@ -11,7 +11,7 @@ const serviceAccount = require('./prova-db-f5dae-firebase-adminsdk-mnhjp-1e79112
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: process.env.DATABASE_URL
+  databaseURL: "https://prova-db-f5dae-default-rtdb.firebaseio.com"
 });
 const database = admin.database();
 
