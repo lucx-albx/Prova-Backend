@@ -34,6 +34,19 @@ app.use(bodyParser.json());
 //     });
 // });
 
+
+app.get('/login', (req, res) => {
+  res.setHeader("content-type", "text/html")
+  res.write("WOKING YOUR DATA")
+  res.end()
+})
+
+app.get('/register', (req, res) => {
+  res.setHeader("content-type", "text/html")
+  res.write("WOKING YOUR DATA")
+  res.end()
+})
+
 //login semplice
 app.post('/login', (req, res) => {
   let can_enter = false
